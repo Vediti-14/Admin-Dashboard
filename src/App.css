@@ -1,38 +1,143 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  scroll-behavior: smooth;/*must have if you are using google chrome */
+
+  --primary: #4154f1;
+  --second: #717ff5;
+  --bgColor: #ddecff;
+
+  --font-main: 'Nunito', sans-serif;
+  --font-body: 'Open Sans', sans-serif;
+  --text-color: #444444;
+  --hover-bg: #f6f9ff;
+  --dropdown-border: #eaedf1;
+  --dropdown-shadow: rgba(82, 63, 105, 0.2);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* This should NOT be in universal selector — moved to body */
+body {
+  background: var(--bgColor);
+  font-family: var(--font-body);
+  color: var(--text-color);
+  line-height: 1.6;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+/* index.css or App.css */
+body.dark {
+  background-color: #111;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+
+/* Link styling */
+a {
+  color: var(--primary);
+  text-decoration: none;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
+a:hover {
+  color: var(--second);
+  text-decoration: none;
+}
+
+/* Heading fonts */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-main);
+}
+
+/* =======================
+   Dropdown Menu Styling
+========================== */
+
+.dropdown-menu {
+  border-radius: 4px;
+  padding: 10px 0;
+  border: 0;
+  box-shadow: 0 5px 30px var(--dropdown-shadow);
+  animation: dropdown-animate 0.25s both;
+  background-color: #fff;
+  min-width: 180px;
+  z-index: 1000;
+}
+
+/* Dropdown Header/Footer */
+.dropdown-menu .dropdown-header,
+.dropdown-menu .dropdown-footer {
+  text-align: center;
+  font-size: 15px;
+  padding: 10px 25px;
+  background: #fff;
+}
+
+.dropdown-menu .dropdown-footer a {
+  color: var(--text-color);
+  text-decoration: underline;
+}
+
+.dropdown-menu .dropdown-footer a:hover {
+  text-decoration: none;
+}
+
+/* Divider */
+.dropdown-menu .dropdown-divider {
+  margin: 0;
+  border-top: 1px solid var(--dropdown-border);
+}
+
+/* Dropdown Item */
+.dropdown-menu .dropdown-item {
+  font-size: 14px;
+  padding: 10px 15px;
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  color: var(--text-color);
+}
+
+.dropdown-menu .dropdown-item i {
+  margin-right: 10px;
+  font-size: 18px;
+  line-height: 0;
+}
+
+/* Hover */
+.dropdown-menu .dropdown-item:hover {
+  background-color: var(--hover-bg);
+  color: var(--primary);
+}
+
+/* Dropdown Arrow */
+@media (min-width: 768px) {
+  .dropdown-menu-arrow::before {
+    content: '';
+    width: 13px;
+    height: 13px;
+    background: #fff;
+    position: absolute;
+    top: -7px;
+    right: 20px;
+    transform: rotate(45deg);
+    border-top: 1px solid var(--dropdown-border);
+    border-left: 1px solid var(--dropdown-border);
+  }
+}
+
+/* Animation */
+@keyframes dropdown-animate {
   from {
-    transform: rotate(0deg);
+    opacity: 0;
+    transform: translateY(-10px);
   }
   to {
-    transform: rotate(360deg);
+    opacity: 1;
+    transform: translateY(0);
   }
 }

@@ -1,0 +1,90 @@
+/* Card container */
+.card {
+  border-radius: 8px;
+  
+  box-shadow: none;
+  background-color: #fff;
+  transition: box-shadow 0.3s ease;
+  max-width: 400px;
+  margin-bottom:30px;
+}
+
+/* Optional: Slight hover effect */
+.card:hover {
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+/* Style the Filter dropdown header */
+.card-filter .dropdown-header h6 {
+  font-size: 16 px;
+  font-weight: 700;
+  color: #012970; /* Dark blue like your screenshot */
+  margin: 0;
+  padding: 5px 15px;
+
+}
+
+
+
+/* Card title (e.g., Sales | Today) */
+.card-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+/* Main value (e.g., $3,246) */
+.card-body h6 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #012970;
+  margin-bottom: 8px;
+}
+
+/* Percentage text */
+.card-body span.text-success,
+.card-body span.text-danger {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* Icon container */
+.card-icon {
+  width: 50px;
+  height: 50px;
+  font-size: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15px;
+  flex-shrink: 0;
+}
+
+/* Icon color backgrounds */
+.sales-card .card-icon {
+  color: #4154f1;
+  background: #f6f6fe;
+}
+
+.revenue-card .card-icon {
+  color: #2eca6a;
+  background: #e0f8e9;
+}
+
+.customers-card .card-icon {
+  color: #ff771d;
+  background: #ffecdf;
+}
+
+/* Align text and icon side by side */
+.d-flex.align-items-center {
+  display: flex;
+  align-items: center;
+}
+
+/* Spacing between icon and text */
+.ps-3 {
+  padding-left: 1rem;
+}

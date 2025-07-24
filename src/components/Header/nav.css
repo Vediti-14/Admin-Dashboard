@@ -1,0 +1,103 @@
+/* Header Navigation Styles */
+.header-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Notification Bell Icon */
+.header-nav .nav-icon {
+  font-size: 22px;
+  color: #012970;
+  margin-right: 25px;
+  position: relative;
+}
+
+/* Badge Number Position & Style */
+.header-nav .badge-number {
+  position: absolute;
+  inset: -2px 5px auto auto;
+  font-weight: normal;
+  font-size: 12px;
+  padding: 3px 6px;
+}
+
+/* Notification Dropdown Panel */
+.header-nav .notifications {
+  inset: 8px 15px auto auto !important;
+}
+
+/* Notification Header */
+.header-nav .notifications .dropdown-header {
+  padding: 10px 15px;
+  font-weight: 600;
+  color: #012970;
+  font-size: 14px;
+}
+
+/* Divider inside dropdown */
+.header-nav .dropdown-divider {
+  margin: 0;
+  border-top: 1px solid #f0f0f0;
+}
+
+/* Notification Items */
+.header-nav .notifications .notification-item {
+  display: flex;
+  align-items: center;
+  padding: 15px 10px;
+  transition: 0.3s;
+}
+
+/* Icon Inside Each Notification */
+.header-nav .notifications .notification-item i {
+  margin: 0 20px 0 10px;
+  font-size: 24px;
+  color: #012970;
+}
+
+/* Notification Title */
+.header-nav .notifications .notification-item h4 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #444444;
+}
+
+/* Notification Text */
+.header-nav .notifications .notification-item p {
+  font-size: 13px;
+  margin-bottom: 3px;
+  color: #919191;
+}
+
+/* Hover Effect on Notification Items */
+.header-nav .notifications .notification-item:hover {
+  background-color: #f6f9ff;
+}
+
+/* Notification Footer Link */
+.header-nav .dropdown-footer a {
+  display: block;
+  padding: 10px;
+  text-align: center;
+  color: #012970;
+  font-weight: 600;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+/* Avatar Image (Profile Picture) */
+.header-nav .nav-profile img {
+  max-width: 36px;
+  max-height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.dark-mode-toggle button {
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  margin-left: 10px;
+}

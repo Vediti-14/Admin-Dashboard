@@ -1,0 +1,36 @@
+.dark-mode-toggle {
+  width: 40px;
+  height: 40px;
+  background-color: #ddd;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.dark-mode-toggle:hover {
+  background-color: #bbb;
+}
+
+.circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  transition: background 0.3s ease;
+}
+
+.circle.light {
+  background-color: #000;
+}
+
+.circle.dark {
+  background-color: #fff;
+}
+
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}

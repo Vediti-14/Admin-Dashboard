@@ -1,0 +1,13 @@
+#main {
+    margin-top: 60px;       /* space below the header */
+    margin-left: 300px;     /* space for the fixed sidebar */
+    padding: 20px 30px;
+    transition: all 0.3s;
+}
+
+@media (max-width: 1199px) {
+    #main {
+        margin-left: 0;     /* full width when sidebar is hidden */
+        padding: 20px;
+    }
+}

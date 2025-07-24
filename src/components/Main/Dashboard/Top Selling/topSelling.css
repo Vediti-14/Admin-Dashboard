@@ -1,0 +1,40 @@
+
+/* Top Selling */
+
+.dashboard.top-selling {
+  font-size: 14px;
+}
+
+.dashboard.top-selling table thead {
+  background: #f6f6fe !important;
+}
+
+.dashboard.top-selling table thead th {
+  border: 0;
+}
+
+.dashboard.top-selling table tbody td,
+.dashboard.top-selling table tbody th {
+  vertical-align: middle;
+  text-align: center;
+}
+
+/* ✅ Fix image size and alignment */
+.dashboard.top-selling table img {
+  width: 40px !important;
+  height: 40px !important;
+  object-fit: cover;
+  border-radius: 5px;
+  display: block;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.top-selling-img {
+  width: 40px !important;
+  height: 40px !important;
+  object-fit: cover;
+  border-radius: 5px;
+  display: block;
+  margin: 0 auto;
+}

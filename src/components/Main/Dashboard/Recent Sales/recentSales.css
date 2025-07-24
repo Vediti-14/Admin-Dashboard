@@ -1,0 +1,49 @@
+/* Recent Sales */
+
+.dashboard.recent-sales {
+  font-size: 14px;
+}
+
+.dashboard.recent-sales table thead {
+  background: #f6f6fe !important;
+}
+
+.dashboard.recent-sales table thead th {
+  border: 0;
+}
+
+.dashboard.recent-sales .dataTable-top {
+  padding: 0 0 10px 0;
+}
+
+.dashboard.recent-sales .dataTable-bottom {
+  /* Recent Sales */
+
+.dashboard.recent-sales {
+  font-size: 14px;
+}
+
+.dashboard.recent-sales table thead {
+  background: #f6f6fe !important;
+}
+
+.dashboard.recent-sales table thead th {
+  border: 0;
+}
+
+.dashboard.recent-sales .dataTable-top {
+  padding: 0 0 10px 0;
+}
+
+.dashboard.recent-sales .dataTable-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  font-size: 13px;
+  color: #6c757d;
+  border-top: 1px solid #dee2e6;
+}
+
+
+}

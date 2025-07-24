@@ -1,0 +1,78 @@
+.card.recent-activity {
+  padding: 20px;
+  min-height: auto;
+  max-height: none;
+  overflow-y: visible; /* ❌ No scroll */
+}
+
+.activity-item {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  gap: 8px; /* smaller gap */
+  margin-bottom: 12px; /* tighter spacing */
+  font-size: 12px; /* smaller text */
+}
+
+.activity-label {
+  width: 50px;
+  text-align: right;
+  white-space: nowrap;
+  color: #6c757d;
+  flex-shrink: 0;
+  font-size: 12px; /* smaller label text */
+}
+
+.activity-badge {
+  font-size: 0.5rem; /* smaller dot */
+  margin-top: 4px;
+  color: currentColor;
+}
+
+/* Optional: for dot color classes */
+.activity-badge.green {
+  color: #28a745;
+}
+.activity-badge.red {
+  color: #dc3545;
+}
+.activity-badge.blue {
+  color: #007bff;
+}
+.activity-badge.cyan {
+  color: #17a2b8;
+}
+
+.activity-content {
+  flex: 1;
+  padding-bottom: 12px;
+  font-size: 12px; /* smaller text */
+  color: #333;
+}
+
+.activity-item:last-child .activity-content {
+  padding-bottom: 0;
+}
+.recent-title {
+  font-size: 14px;  /* smaller title */
+  font-weight: 600;
+  color: #333;
+  margin: 0;
+}
+
+/* Optional: style for the three dots icon */
+.card-header i.bi-three-dots {
+  font-size: 16px;
+  cursor: pointer;
+  color: #888;
+}
+
+/* Adjust the card header if needed */
+.card-header {
+  padding: 10px 20px;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
